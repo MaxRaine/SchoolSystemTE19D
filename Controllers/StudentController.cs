@@ -15,7 +15,7 @@ namespace TE19DWEBAPIKURS.Controllers
             _studentService = studentService;
         }
 
-        [HttpGet]
+        [HttpGet("GetStudents")]
         public ActionResult<List<Student>> GetStudent() 
         {
             return Ok(_studentService.GetStudentList());
